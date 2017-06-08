@@ -1,0 +1,39 @@
+#--------------- [ android ]---------------#
+/android/gen
+/android/bin
+/google-play-services_lib/bin
+/google-play-services_lib/gen
+
+# ---------------[ Unity generated ]------------------ #
+apk/
+apkOnWeb/
+Temp/
+obj/
+UnityGenerated/
+Library/
+/unity/obj
+/unity/build
+
+ 
+# ----[ Visual Studio / MonoDevelop generated ]------- #
+ 
+ExportedObj/
+*.svd
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln
+*.user
+*.unityproj
+*.booproj
+ 
+# -------------[ OS generated ]------------------------ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumPool3d.db
+ThumPool3d.db

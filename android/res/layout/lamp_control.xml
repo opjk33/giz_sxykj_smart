@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 开关1 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_group"
+        android:layout_width="match_parent"
+        android:layout_height="160dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" >
+
+            <TextView
+                android:id="@+id/tv_title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:text="开关1"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignBottom="@id/tv_title_name"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#a5b1b6" />
+        </RelativeLayout>
+
+        <!-- 亮度布局开始 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_brightness"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_below="@id/rl_title" >
+
+            <RelativeLayout
+                android:id="@+id/rl01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="25dp" >
+
+                <ImageView
+                    android:id="@+id/ivLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/comd1_home_icon_light" />
+
+                <ImageView
+                    android:id="@+id/ivRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/comd1_home_icon_brightness" />
+
+                <SeekBar
+                    android:id="@+id/sbBrighteness"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@id/ivRight"
+                    android:layout_toRightOf="@id/ivLeft"
+                    android:minHeight="2dp"
+                    android:progress="20"
+                    android:thumb="@drawable/comd1_light_sewen_bg2" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_brightness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/brightness"
+                android:textSize="18sp" />
+        </RelativeLayout>
+        <!-- 亮度布局结束 -->
+
+
+        <!-- 底部布局开始 -->
+
+        <RelativeLayout
+            android:id="@+id/rlPowerOn"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/rl_brightness"
+            android:layout_centerHorizontal="true" >
+
+            <!-- 开关布局开始 -->
+
+            <RelativeLayout
+                android:id="@+id/rlPower"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/btnPower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/selector_power"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tvPower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:layout_centerHorizontal="true"
+					android:layout_centerVertical="true"
+                    android:text="开启" />
+
+            </RelativeLayout>
+            <!-- 开关布局结束 -->
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
